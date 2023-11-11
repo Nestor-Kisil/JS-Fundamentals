@@ -1,14 +1,12 @@
-var body = document.createElement('body')
-var main = document.createElement('main')
-main.className = 'mainClass check item'
-var div = document.createElement('div')
-div.id = 'myDiv'
-var p = document.createElement('p')
-
-var text = document.createTextNode('First paragraph')
-p.appendChild(text)
-
-div.appendChild(p)
-main.appendChild(div)
-body.appendChild(main)
-document.body = body
+document.addEventListener('DOMContentLoaded', function () {
+	const body = document.body
+	const main = document.createElement('main')
+	const div = document.createElement('div')
+	const p = document.createElement('p')
+	main.className = 'mainClass check item'
+	div.id = 'myDiv'
+	p.textContent = 'First paragraph'
+	div.appendChild(p)
+	main.appendChild(div)
+	body.appendChild(main)
+})
